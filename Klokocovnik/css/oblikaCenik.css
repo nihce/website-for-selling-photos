@@ -1,0 +1,81 @@
+body {
+    margin: auto;
+    width: 90%;
+    background-color: #232324;
+    color: #777777;
+    font-family: 'Open Sans', sans-serif;
+}
+ul.zavihek {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232324;
+    font-weight: bold;
+    margin-bottom: 9ch;
+}
+ul.zavihek li {
+    float: left;
+}
+ul.zavihek li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.zavihek li a:hover:not(.active) {background-color: #333; border-radius: 10px;}
+ul.zavihek li a.active {color: black; background: linear-gradient(to top, #df7a00 0%, #ca5500 80%);  border-radius: 10px;}
+ul.zavihek li.right {float: right;}
+}
+
+@media screen and (orientation: portrait) and handheld{
+    body {margin: auto; width: 98%;}
+    ul.zavihek li.right,
+    ul.zavihek li {float: none;}
+    ul.zavihek{margin-bottom: 5ch;}
+}
+@media screen and (orientation: portrait) and (max-width: 550px){
+    body {margin: auto; width: 98%;}
+    ul.zavihek li.right,
+    ul.zavihek li {float: none;}
+    ul.zavihek{margin-bottom: 5ch;}
+}
+@media screen and (orientation: landscape) and (min-width: 1000px){
+    body{
+        margin: auto;
+        width: 60%;
+    }
+    div#cenik{
+        margin: auto;
+        max-width: 85ch;
+    }
+    div.opomba{
+        margin: auto;
+        max-width: 95ch;
+    }
+}
+
+table#tabela{
+    border: none;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    line-height: 1.6;
+}
+.opomba{
+    margin-top: 6ch;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color: #bbbbbb;
+    font-size: 80%;
+}
+th{
+    line-height: 3; padding-top: 0px; font-size: 1.1em;
+}
+.levo{text-align: left;}
+.desno{text-align: right;}
+.TKP{text-decoration: none; color: #777777;}
+.TKPprotokol{margin: auto; width: 20ch;}

@@ -1,0 +1,64 @@
+body {
+    margin: auto;
+    width: 90%;
+    background-color: #232324;
+    color: #777777;
+    font-family: 'Open Sans', sans-serif;
+}
+ul.zavihek {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232324;
+    font-weight: bold;
+}
+ul.zavihek li {
+    float: left;
+}
+ul.zavihek li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.zavihek li a:hover:not(.active) {background-color: #333; border-radius: 10px;}
+ul.zavihek li a.active {color: black; background: linear-gradient(to top, #df7a00 0%, #ca5500 80%);  border-radius: 10px;}
+ul.zavihek li.right {float: right;}
+}
+
+@media screen and (orientation: portrait) and handheld{
+    body {margin: auto; width: 98%;}
+    ul.zavihek li.right,
+    ul.zavihek li {float: none;}
+    ul.zavihek{margin-bottom: 8ch;}
+}
+@media screen and (orientation: portrait) and (max-width: 550px){
+    body {margin: auto; width: 98%;}
+    ul.zavihek li.right,
+    ul.zavihek li {float: none;}
+    ul.zavihek{margin-bottom: 8ch;}
+}
+@media screen and (orientation: landscape) and (min-width: 1000px){
+    body{
+        margin: auto;
+        width: 60%;
+    }
+}
+.kontakt{
+    margin-top: 0ch;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40ch;
+}
+.sredina{
+    text-align: center;
+}
+.oranzno{
+    color: #ff9a22;
+}
+.debelo{
+    font-size: 110%;
+    font-weight: bold;
+}

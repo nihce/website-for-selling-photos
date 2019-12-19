@@ -1,0 +1,96 @@
+body {
+    margin: auto;
+    width: 90%;
+    background-color: #232324;
+    color: #777777;
+    font-family: 'Open Sans', sans-serif;
+}
+.odmik_spodaj{
+    margin-bottom: 10ch;
+}
+ul.zavihek {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232324;
+    font-weight: bold;
+}
+ul.zavihek li {
+    float: left;
+}
+ul.zavihek li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.zavihek li a:hover:not(.active) {background-color: #333; border-radius: 10px;}
+ul.zavihek li a.active {color: black; background: linear-gradient(to top, #df7a00 0%, #ca5500 80%);  border-radius: 10px;}
+ul.zavihek li.right {float: right;}
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery a{
+    text-decoration: none;
+    color: #777777;
+}
+div.gallery:hover a{
+    color: #ff9a22;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+div.desc {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 105%;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    float: left;
+    width: 45.99999%;
+    margin: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+@media screen and (orientation: portrait) and handheld{
+    body {margin: auto; width: 98%;}
+    ul.zavihek li.right,
+    ul.zavihek li {float: none;}
+    .responsive {
+        width: 100%;
+    }
+    .odmik_spodaj{margin-bottom: 5ch;}
+}
+@media screen and (orientation: portrait) and (max-width: 550px){
+    body {margin: auto; width: 98%;}
+    ul.zavihek li.right,
+    ul.zavihek li {float: none;}
+    .responsive {
+        width: 100%;
+    }
+    .odmik_spodaj{margin-bottom: 5ch;}
+}
+@media screen and (orientation: landscape) and (min-width: 1000px){
+    body{
+        margin: auto;
+        width: 60%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

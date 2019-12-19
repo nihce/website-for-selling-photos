@@ -1,0 +1,12 @@
+<p class="sredina">
+    <img src="slike/kontaktneSlike/Danusa.jpg" alt="DANUSA" style="max-width:400px;">
+</p>
+<p class="sredina oranzno debelo">
+    DANUŠA VIŽINTIN
+</p>       
+<p class="sredina">
+    <span class="svetlo">E-pošta:</span> <span class="oranzno">kontakt.mkslike@gmail.com</span>
+</p>
+<p class="sredina">
+    <span class="svetlo">Tel.:</span> <span class="oranzno">031 500-813</span>
+</p>
